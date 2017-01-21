@@ -1,0 +1,43 @@
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	
+}
+
+ 
+body{position:relative; 
+height:15cm;
+width:100%;
+overflow:hidden;}
+.aaa{height:3cm;
+	margin-left:-3px;
+	float:left; width:6cm;
+      
+	  border-left:3px dotted blue;
+	  border-right:3px dotted blue;
+	  border-top:3px dotted blue;
+	  border-radius: 6cm 6cm 0 0;
+	  }  
+					  
+	.aaa:nth-child(even) {margin-left:-3px;
+   
+	
+	transform:rotateX(180deg);
+	transform-origin:bottom;
+}
+
+	.lll{position:absolute;
+      top:0px;
+	  left:0px;
+	  
+     height:13cm;
+	 width:90px;
+	background:white;
+	 
+	 animation:slide 20s infinite;
+	 animation-timing-function:linear;
+	 animation-fill-mode:forwards;}	
+@keyframes slide{from{left:0px;}
+                       to{left:36cm;}	 
+
